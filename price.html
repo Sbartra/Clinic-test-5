@@ -572,20 +572,69 @@ article {
 
 <!--end of modal box-->
 
-        <div class="w3-content w3-display-topright w3-center w3-container w3-tiny w3-hide-small" style="max-width:290px;">
+         <div class="w3-content w3-display-topright w3-center w3-container w3-hide-small" style="max-width:600px;">
             
             <div class="w3-row w3-padding-16 w3-section">
               <div class="w3-col m4 w3-container w3-circle w3-card">
                 
               </div>
-              <div class="w3-col m8 w3-panel w3-transparent w3-card w3-padding w3-circle" style="width:100%">
+              <div class="w3-col m8 w3-panel w3-transparent w3-card w3-circle" style="width:100%;">
                 <div class="w3-large w3-margin-bottom"><br>
-                  <p class="w3-text-white"  style="text-shadow:2px 2px 0 #444"><i class="w3-text-white w3-center w3-large w3-margin-right"></i><b>Book An
-                      Appointment Today!</b><br></p>
+                  
                   
                 </div>
-                  
                
+
+                <form action="/action_page.php" target="_blank"  method="POST" data-netlify="true" class="w3-container w3-tiny w3-margin">
+                
+                  <p class="w3-text-white w3-medium"  style="text-shadow:2px 2px 0 #444"><b>Book An
+                    Appointment Today!</b><br></p>
+
+                  <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:0px"></div>
+                      <div class="w3-rest">
+                        <input class="w3-input w3-border w3-round" name="first" type="text" placeholder="Name"  required name="Name">
+                      </div>
+                  </div>
+                  
+                  <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:0px"></div>
+                      <div class="w3-rest">
+                        <input class="w3-input w3-border w3-round" name="last" type="text" placeholder="Surname"  required name="Surname">
+                      </div>
+                  </div>
+                  
+                  <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:0px"></div>
+                      <div class="w3-rest">
+                        <input class="w3-input w3-border w3-round" name="email" type="text" placeholder="Email"  required name="Email">
+                      </div>
+                  </div>
+                  
+                  <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:0px"></div>
+                      <div class="w3-rest">
+                        <input class="w3-input w3-border w3-round" name="phone" type="text" placeholder="Phone"  required name="Phone">
+                      </div>
+                  </div>
+                  
+                  <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:0px"></div>
+                      <div class="w3-rest">
+                        <input class="w3-input w3-border w3-round" name="message" type="text" placeholder="Message"  required name="Message">
+                      </div>
+                  </div>
+                  
+                  <p>
+                    <button class="w3-button w3-black w3-round" type="submit">
+                      <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                  </p>
+                  
+                  </form>
+
+
+               <!--
                 <form action="/action_page.php" target="_blank"  method="POST" data-netlify="true">
                   <div class="w3-row-padding" style="margin:0 -8px 4px -8px">
                     <div class="w3-half">
@@ -600,6 +649,8 @@ article {
                     <i class="fa fa-paper-plane w3-small"></i> SEND MESSAGE
                   </button>
                 </form>
+              -->
+
                  </div>                                
               </div>
             </div>
