@@ -474,9 +474,73 @@ article {
 
 
 <!--Modal box-->
-<div class="w3-container w3-padding-64 w3-display-topmiddle w3-hide-large w3-hide-medium" style="max-width:1100px">
+<div class="w3-container w3-padding-64 w3-display-topright w3-hide-large w3-hide-medium" style="max-width:600px;">
+<br><br>
+ <!--<p class="w3-text-white"><a href="#contact" class="w3-button w3-round w3-transparent" style="text-decoration: none; text-shadow:1px 1px 0 #444;">Book An Appointment today!</a></p>-->
+ <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-display-right w3-circle w3-blue-grey" style="width:105px; height:105px;">Book An <br> Appointment <br> today! </button>
 
-  <p class="w3-text-white"><a href="#contact" class="w3-button w3-round w3-transparent" style="text-decoration: none; text-shadow:1px 1px 0 #444;">Book An Appointment today!</a></p>
+ <div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="w3-center">Complete the Form</h2>
+    </header>
+    <div class="w3-container">
+
+      <form action="/action_page.php" target="_blank"  method="POST" data-netlify="true" class="w3-container w3-tiny w3-margin">
+        <br>
+          <p class="w3-text-blue w3-medium"  style="text-shadow:1px 1px 0 #444"><b>Book An
+            Appointment Today!</b><br></p>
+
+          <div class="w3-row w3-section">
+            <div class="w3-col" style="width:0px"></div>
+              <div class="w3-rest">
+                <input class="w3-input w3-border w3-text-black w3-round" name="first" type="text" placeholder="Name" required name="Name">
+              </div>
+          </div>
+          
+          <div class="w3-row w3-section">
+            <div class="w3-col" style="width:0px"></div>
+              <div class="w3-rest">
+                <input class="w3-input w3-border w3-text-black w3-round" name="last" type="text" placeholder="Surname" required name="Surname">
+              </div>
+          </div>
+          
+          <div class="w3-row w3-section">
+            <div class="w3-col" style="width:0px"></div>
+              <div class="w3-rest">
+                <input class="w3-input w3-border w3-text-black w3-round" name="email" type="text" placeholder="Email" required name="Email">
+              </div>
+          </div>
+          
+          <div class="w3-row w3-section">
+            <div class="w3-col" style="width:0px"></div>
+              <div class="w3-rest">
+                <input class="w3-input w3-border w3-text-black w3-round" name="phone" type="text" placeholder="Phone" required name="Phone">
+              </div>
+          </div>
+          
+          <div class="w3-row w3-section">
+            <div class="w3-col" style="width:0px"></div>
+              <div class="w3-rest">
+                <input class="w3-input w3-border w3-text-black w3-round" name="message" type="text" placeholder="Message" required name="Message">
+              </div>
+          </div>
+          
+          <p>
+            <button class="w3-button w3-blue w3-round" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+          
+          </form>
+    </div>
+    <footer class="w3-container w3-blue-grey"><br>
+      <p class="w3-center">Ramin Aesthetic Studio</p>
+    </footer>
+  </div>
+</div>
 
     <!--<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-black">Book An Appointment Today!</button>
   
@@ -512,7 +576,7 @@ article {
 
 <!--end of modal box-->
 
-         <div class="w3-content w3-display-topright w3-center w3-container w3-hide-small" style="max-width:600px;">
+          <div class="w3-content w3-display-topright w3-center w3-container w3-hide-small" style="max-width:600px;">
             
             <div class="w3-row w3-padding-16 w3-section">
               <div class="w3-col m4 w3-container w3-circle w3-card">
@@ -533,35 +597,35 @@ article {
                   <div class="w3-row w3-section">
                     <div class="w3-col" style="width:0px"></div>
                       <div class="w3-rest">
-                        <input class="w3-input w3-border w3-text-black w3-round" name="first" type="text" placeholder="Name"  required name="Name">
+                        <input class="w3-input w3-border w3-text-black w3-round" name="first" type="text" placeholder="Name" required name="Name">
                       </div>
                   </div>
                   
                   <div class="w3-row w3-section">
                     <div class="w3-col" style="width:0px"></div>
                       <div class="w3-rest">
-                        <input class="w3-input w3-border w3-text-black w3-round" name="last" type="text" placeholder="Surname"  required name="Surname">
+                        <input class="w3-input w3-border w3-text-black w3-round" name="last" type="text" placeholder="Surname" required name="Surname">
                       </div>
                   </div>
                   
                   <div class="w3-row w3-section">
                     <div class="w3-col" style="width:0px"></div>
                       <div class="w3-rest">
-                        <input class="w3-input w3-border w3-text-black w3-round" name="email" type="text" placeholder="Email"  required name="Email">
+                        <input class="w3-input w3-border w3-text-black w3-round" name="email" type="text" placeholder="Email" required name="Email">
                       </div>
                   </div>
                   
                   <div class="w3-row w3-section">
                     <div class="w3-col" style="width:0px"></div>
                       <div class="w3-rest">
-                        <input class="w3-input w3-border w3-text-black w3-round" name="phone" type="text" placeholder="Phone"  required name="Phone">
+                        <input class="w3-input w3-border w3-text-black w3-round" name="phone" type="text" placeholder="Phone" required name="Phone">
                       </div>
                   </div>
                   
                   <div class="w3-row w3-section">
                     <div class="w3-col" style="width:0px"></div>
                       <div class="w3-rest">
-                        <input class="w3-input w3-border w3-text-black w3-round" name="message" type="text" placeholder="Message"  required name="Message">
+                        <input class="w3-input w3-border w3-text-black w3-round" name="message" type="text" placeholder="Message" required name="Message">
                       </div>
                   </div>
                   
@@ -595,41 +659,6 @@ article {
               </div>
             </div>
          
-      
-    <!--
-          <div class="w3-container" style="max-width:1100px">
-            <div class="w3-center w3-padding-16"><br>
-                <h4 class="w3-center w3-text-black"><b>Our Expert Rejuvenation Treatments Include:</b></h4>
-            </div>
-          
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="https://i.ibb.co/bFj97gC/beauty.jpg" style="width:100%">
-      <div class="w3-container w3-center">
-        <button class="w3-button w3-large">Dermal Fillers</button>
-      </div>
-    </div>
-  </div>
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="https://i.ibb.co/p07P34T/Good-Aesthetician.jpg" style="width:100%">
-      <div class="w3-container w3-center">
-        <button class="w3-button w3-large">Facial Rejuvenation</button>
-      </div>
-    </div>
-  </div>
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="https://i.ibb.co/Jvf9Tnh/modelo.jpg" style="width:100%">
-      <div class="w3-container w3-center">
-        <button class="w3-button w3-large">Mesotherapy & Peel</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
--->
       
     
 <!-- Overlay effect when opening sidebar on small screens -->
